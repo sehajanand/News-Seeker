@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import Footer from "./Components/Footer.js";
 import News from "./Components/News.js";
 import Navbar from "./Components/Navbar.js";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
 
 export default class App extends Component {
   render() {
