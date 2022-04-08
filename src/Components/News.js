@@ -46,7 +46,7 @@ render(){
                 <div className="row">
                   
                 {!this.state.loading&&
-                    this.state.articles.map((element)=>{
+                    this.state.articles?.map((element)=>{
                         return  <div key={element.url} className="col-md-4 phoneDisplay" > <Newsitem  title={element.title} description={element.description===null?"":element.description} imgUrl={element.urlToImage} newsUrl={element.url} author={element.author===null?"Unkown author":element.author} time={element.publishedAt===null?"Unknown time":new Date(element.publishedAt).toGMTString()}/> </div>
                     })
                 }
